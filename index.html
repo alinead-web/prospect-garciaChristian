@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garcia Christian – Plombier 24h/24 Chamalières (63)</title>
+<meta name="description" content="Artisan plombier disponible 24h/24 et 7j/7 à Chamalières (63400). Urgences, débouchage, réparation de fuites et chauffe-eau. Note Google 5/5. 06 67 35 21 59.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Garcia Christian – Dépannage Plomberie 24h/24 à Chamalières">
+<meta property="og:description" content="Intervention express de jour comme de nuit, week-end inclus. Réparation de fuites, débouchage, chauffe-eau et sanitaires. 06 67 35 21 59.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+<!-- SCHEMA.ORG -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Garcia Christian",
+  "alternateName": "Chamalières Plomberie",
+  "telephone": "+33667352159",
+  "priceRange": "€€",
+  "description": "Artisan plombier chauffagiste à Chamalières. Ouvert 24h/24 et 7j/7 pour les dépannages urgents, nettoyage de canalisations, réparation de tuyaux, pose et réparation de chauffe-eau, robinetterie et toilettes.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "54 Avenue Joseph Claussat",
+    "addressLocality": "Chamalières",
+    "postalCode": "63400",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.7765,
+    "longitude": 3.0644
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "26",
+    "bestRating": "5"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Puy-de-Dôme"
+  }
+}
+</script>
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+/* Thème Urgence 24/7 : Bleu Nuit profond et Rouge Urgence (vif) */
+:root{--navy:#111827;--teal:#2563eb;--gold:#dc2626;--cream:#f9fafb;--white:#fff;--text:#1f2937;--muted:#6b7280}
+html{scroll-behavior:smooth}
+body{font-family:'Lora',serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+
+/* REVEAL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-36px);transition:opacity .65s ease,transform .65s ease}
+.reveal-left.visible{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(36px);transition:opacity .65s ease,transform .65s ease}
+.reveal-right.visible{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* NAV */
+nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(17,24,39,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:.08em;color:var(--white);text-transform:uppercase;text-decoration:none}
+.nav-logo span{color:#60a5fa}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.nav-phone{display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;color:#ef4444;text-decoration:none;transition:color .2s}
+.nav-phone:hover{color:#f87171}
+
+/* FLOTTANT RAPPEL */
+.rappel-toggle{position:fixed;bottom:28px;right:28px;z-index:299;width:58px;height:58px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.3);transition:transform .2s;border:2px solid #dc2626;padding:0;animation:callPulse 2.5s ease-in-out infinite}
+.rappel-toggle:hover{transform:scale(1.08);animation:none}
+@keyframes callPulse{0%,100%{box-shadow:0 4px 20px rgba(220,38,38,.35)}50%{box-shadow:0 4px 30px rgba(220,38,38,.65)}}
+.rappel-bubble{position:fixed;bottom:98px;right:28px;z-index:300;display:none;background:var(--navy);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:22px 20px 20px;width:272px;box-shadow:0 10px 36px rgba(0,0,0,.38)}
+.rappel-bubble p.rt{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.08rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);margin-bottom:4px}
+.rappel-bubble p.rs{color:rgba(255,255,255,.5);font-size:.82rem;margin-bottom:14px}
+.rappel-bubble input{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:var(--white);font-family:'Lora',serif;font-size:.9rem;padding:10px 12px;border-radius:3px;outline:none;margin-bottom:8px;display:block}
+.rappel-bubble input::placeholder{color:rgba(255,255,255,.3)}
+.rappel-bubble .send{width:100%;background:#dc2626;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;padding:11px;border:none;border-radius:3px;cursor:pointer;transition:background .2s}
+.rappel-bubble .send:hover{background:#b91c1c}
+.rappel-close{position:absolute;top:10px;right:12px;background:none;border:none;color:rgba(255,255,255,.35);font-size:1.1rem;cursor:pointer;line-height:1;transition:color .2s}
+.rappel-close:hover{color:var(--white)}
+#rappel-status{display:none;margin-top:10px;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;text-align:center}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+/* IMAGE ALK PLOMBERIE OBLIGATOIRE */
+.hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1600&q=80') center/cover no-repeat;filter:brightness(.3)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(17,24,39,.95) 0%,rgba(17,24,39,.75) 55%,rgba(37,99,235,.25) 100%)}
+.hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:120px 40px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+@keyframes heroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes floatIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,6vw,5.4rem);line-height:.95;color:var(--white);text-transform:uppercase;letter-spacing:-.01em;margin-bottom:12px;animation:heroIn .85s ease-out both}
+.hero h1 em{display:block;color:#60a5fa;font-style:normal;font-size:0.85em}
+.hero-sub{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;letter-spacing:.25em;text-transform:uppercase;color:#ef4444;margin-bottom:26px;animation:heroIn .85s .14s ease-out both}
+.hero-desc{color:rgba(255,255,255,.8);font-size:1.04rem;line-height:1.75;max-width:440px;margin-bottom:38px;animation:heroIn .85s .28s ease-out both}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;animation:heroIn .85s .42s ease-out both}
+.btn-gold{display:inline-flex;align-items:center;gap:9px;background:#dc2626;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;letter-spacing:.07em;text-transform:uppercase;padding:15px 30px;border-radius:2px;text-decoration:none;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-gold:hover{background:#b91c1c;transform:translateY(-3px);box-shadow:0 8px 24px rgba(220,38,38,.35)}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;border:2px solid rgba(255,255,255,.32);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.07em;text-transform:uppercase;padding:15px 30px;border-radius:2px;text-decoration:none;transition:border-color .2s,background .2s}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:6px;padding:38px;backdrop-filter:blur(12px);animation:floatIn 1s ease-out .5s both}
+.stars{color:#ef4444;font-size:1.45rem;margin-bottom:10px}
+.hero-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.45rem;color:var(--white);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.hero-card>p{color:rgba(255,255,255,.65);font-size:.88rem;margin-bottom:26px}
+.card-info{display:flex;flex-direction:column;gap:13px}
+.card-info-row{display:flex;align-items:flex-start;gap:11px;color:rgba(255,255,255,.8);font-size:.9rem}
+.card-info-row svg{flex-shrink:0;margin-top:2px;color:#60a5fa}
+.card-info-row strong{color:var(--white);display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1px}
+
+/* CTA BAND */
+.cta-band{background:linear-gradient(135deg,#030712,#111827);border-top:3px solid #dc2626;padding:36px 40px;text-align:center}
+.cta-band h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.1rem;color:var(--white);text-transform:uppercase;margin-bottom:7px}
+.cta-band h2 span{color:#ef4444}
+.cta-band p{color:rgba(255,255,255,.6);font-size:.95rem;margin-bottom:18px}
+.cta-band-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-band a.primary{display:inline-flex;align-items:center;gap:10px;background:#dc2626;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.25rem;letter-spacing:.05em;padding:13px 34px;border-radius:2px;text-decoration:none;transition:background .2s,transform .2s}
+.cta-band a.primary:hover{background:#b91c1c;transform:scale(1.03)}
+.cta-band a.secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;padding:13px 28px;border:2px solid rgba(255,255,255,.35);border-radius:2px;text-decoration:none;transition:border-color .2s,background .2s}
+.cta-band a.secondary:hover{border-color:white;background:rgba(255,255,255,.08)}
+
+/* PHOTOS OBLIGATOIRES (ALK PLOMBERIE SET) */
+.photos-band{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;height:260px}
+.photos-band figure{overflow:hidden;position:relative;margin:0}
+.photos-band figure img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.photos-band figure:hover img{transform:scale(1.07)}
+.photos-band figure figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(17,24,39,.9));color:white;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:14px 12px 9px;opacity:0;transition:opacity .3s}
+.photos-band figure:hover figcaption{opacity:1}
+
+/* LAYOUT */
+section{padding:88px 40px}
+.container{max-width:1100px;margin:0 auto}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:#2563eb;margin-bottom:11px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;max-width:44px;height:1px;background:#2563eb}
+h2.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.1rem,4vw,3.3rem);text-transform:uppercase;line-height:1;color:var(--navy);margin-bottom:14px}
+h2.section-title span{color:#dc2626}
+.section-text{color:var(--muted);font-size:.98rem;line-height:1.8;max-width:540px}
+
+/* SERVICES */
+.services-bg{background:var(--cream)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:3px;margin-top:52px}
+.service-card{background:var(--white);padding:30px 26px;border-left:3px solid transparent;transition:border-color .22s,box-shadow .22s,transform .25s}
+.service-card:hover{border-left-color:#dc2626;box-shadow:5px 0 26px rgba(220,38,38,.11);transform:translateX(5px)}
+.service-card .icon{width:46px;height:46px;background:rgba(220,38,38,.1);border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1.35rem;transition:background .2s}
+.service-card:hover .icon{background:rgba(220,38,38,.2)}
+.service-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.12rem;letter-spacing:.03em;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.service-card p{color:var(--muted);font-size:.87rem;line-height:1.65}
+
+/* ABOUT */
+.about-bg{background:var(--navy)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-photo{border-radius:4px;overflow:hidden;position:relative}
+/* PHOTO ALK PLOMBERIE OBLIGATOIRE */
+.about-photo img{width:100%;height:400px;object-fit:cover;display:block;transition:transform .5s}
+.about-photo:hover img{transform:scale(1.03)}
+.about-photo-badge{position:absolute;bottom:18px;left:18px;background:#dc2626;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:.83rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 15px;border-radius:2px}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.stat{border:1px solid rgba(255,255,255,.11);padding:22px;border-radius:2px;transition:border-color .25s,background .25s}
+.stat:hover{border-color:#dc2626;background:rgba(220,38,38,.1)}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.4rem;color:#ef4444;line-height:1}
+.stat-label{color:rgba(255,255,255,.6);font-size:.8rem;margin-top:5px}
+.about-right{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:4px;padding:34px;margin-top:32px}
+.about-right h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.45rem;color:var(--white);text-transform:uppercase;margin-bottom:18px}
+.about-list{list-style:none}
+.about-list li{display:flex;align-items:flex-start;gap:11px;color:rgba(255,255,255,.75);font-size:.9rem;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5}
+.about-list li:last-child{border-bottom:none}
+.about-list li::before{content:'✓';flex-shrink:0;color:#60a5fa;font-weight:700;margin-top:1px}
+
+/* REVIEWS */
+.reviews-bg{background:#e5e7eb}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.review-card{background:var(--white);padding:34px 30px;border-radius:3px;border-top:3px solid #dc2626;box-shadow:0 4px 22px rgba(0,0,0,.06);transition:transform .28s,box-shadow .28s}
+.review-card:hover{transform:translateY(-5px);box-shadow:0 14px 38px rgba(0,0,0,.11)}
+.review-stars{color:#dc2626;font-size:1.1rem;margin-bottom:12px}
+.review-text{font-style:italic;color:var(--text);font-size:.91rem;line-height:1.8;margin-bottom:22px}
+.reviewer{display:flex;align-items:center;gap:11px}
+.reviewer-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#dc2626,#991b1b);display:flex;align-items:center;justify-content:center;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.95rem;flex-shrink:0}
+.reviewer-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.95rem;color:var(--navy)}
+.reviewer-date{font-size:.76rem;color:var(--muted)}
+.reviews-score-wrap{margin-top:44px;display:flex;align-items:center;justify-content:center;gap:22px;padding:22px 30px;background:var(--white);border-radius:3px;max-width:440px;margin-left:auto;margin-right:auto;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.reviews-score{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:3.8rem;color:var(--navy);line-height:1}
+.reviews-score sup{font-size:1.5rem;vertical-align:top;margin-top:9px}
+.reviews-meta .stars-big{color:#dc2626;font-size:1.35rem}
+.reviews-meta span{font-size:.83rem;color:var(--muted);margin-top:3px;display:block}
+
+/* FAQ */
+.faq-bg{background:var(--cream)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:52px}
+.faq-item{background:var(--white);border-radius:3px;overflow:hidden;border-left:3px solid transparent;transition:border-color .2s}
+.faq-item.open{border-left-color:#dc2626}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.02em;color:var(--navy);gap:12px;user-select:none}
+.faq-q:hover{color:#dc2626}
+.faq-arrow{flex-shrink:0;font-size:1.1rem;transition:transform .25s;color:#dc2626}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+.faq-item.open .faq-a{max-height:220px}
+.faq-a p{padding:0 22px 18px;color:var(--muted);font-size:.9rem;line-height:1.75}
+
+/* ZONE */
+.zone-bg{background:var(--navy)}
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:52px}
+.zone-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.tag{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.8);font-family:'Barlow Condensed',sans-serif;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 13px;border-radius:2px;transition:background .2s,border-color .2s}
+.tag:hover{background:rgba(220,38,38,.2);border-color:#dc2626;color:white}
+.zone-map{border-radius:4px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.zone-map iframe{width:100%;height:100%;border:none;display:block}
+
+/* CONTACT */
+.contact-bg{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.contact-items{display:flex;flex-direction:column;gap:14px;margin-top:36px}
+.contact-item{display:flex;align-items:center;gap:15px;padding:18px 22px;background:var(--white);border:1px solid rgba(0,0,0,.07);border-radius:3px;text-decoration:none;transition:background .2s,transform .2s,box-shadow .2s}
+.contact-item:hover{background:#fef2f2;transform:translateX(4px);box-shadow:3px 0 16px rgba(220,38,38,.1)}
+.contact-icon{width:46px;height:46px;background:#dc2626;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-item-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.04em;color:var(--navy);text-transform:uppercase}
+.contact-item-text span{color:var(--muted);font-size:.83rem}
+.contact-form{background:var(--white);border-radius:4px;padding:38px;box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.contact-form h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.5rem;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+.contact-form>p{color:var(--muted);font-size:.88rem;margin-bottom:24px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-family:'Barlow Condensed',sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:var(--cream);border:1px solid rgba(0,0,0,.12);color:var(--text);font-family:'Lora',serif;font-size:.9rem;padding:11px 14px;border-radius:2px;outline:none;transition:border-color .2s,background .2s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#dc2626;background:var(--white)}
+.form-group textarea{resize:vertical;min-height:96px}
+.form-submit{width:100%;background:#dc2626;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.1em;text-transform:uppercase;padding:15px;border:none;border-radius:2px;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.form-submit:hover:not(:disabled){background:#b91c1c;transform:translateY(-2px);box-shadow:0 6px 20px rgba(220,38,38,.3)}
+.form-submit:disabled{opacity:.55;cursor:not-allowed}
+#form-status{margin-top:12px;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;text-align:center;padding:11px 14px;border-radius:2px;display:none}
+
+/* FOOTER */
+footer{background:#030712;padding:44px 40px 32px}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.footer-col h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin-bottom:14px}
+.footer-col p,.footer-col a{color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.8;text-decoration:none;display:block;transition:color .2s}
+.footer-col a:hover{color:#60a5fa}
+.footer-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.08em;color:var(--white);text-transform:uppercase;margin-bottom:10px}
+.footer-logo span{color:#60a5fa}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:20px;text-align:center;color:rgba(255,255,255,.3);font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;max-width:1100px;margin:0 auto}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  section{padding:60px 20px}
+  .hero-content{grid-template-columns:1fr;gap:36px;padding:96px 20px 56px}
+  .hero-card{display:none}
+  .about-grid,.zone-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .reviews-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .cta-band{padding:26px 20px}
+  .photos-band{grid-template-columns:1fr 1fr;height:300px}
+  .footer-inner{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:600px){
+  .services-grid{grid-template-columns:1fr}
+  .about-stats{grid-template-columns:1fr 1fr}
+  .photos-band{grid-template-columns:1fr 1fr}
+  .hero-ctas{flex-direction:column}
+  .btn-gold,.btn-outline{justify-content:center}
+  .cta-band-btns{flex-direction:column;align-items:center}
+}
+
+/* RGPD */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--navy);border-top:2px solid #dc2626;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 24px rgba(0,0,0,.25)}
+.cookie-banner p{color:rgba(255,255,255,.8);font-size:.85rem;line-height:1.6;max-width:680px}
+.cookie-banner p a{color:#60a5fa;text-decoration:underline}
+.cookie-btns{display:flex;gap:10px;flex-shrink:0}
+.cookie-accept{background:#dc2626;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:10px 22px;border:none;border-radius:2px;cursor:pointer;transition:background .2s}
+.cookie-accept:hover{background:#b91c1c;color:white}
+.cookie-refuse{background:transparent;color:rgba(255,255,255,.6);font-family:'Barlow Condensed',sans-serif;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px;border:1px solid rgba(255,255,255,.2);border-radius:2px;cursor:pointer;transition:all .2s}
+.cookie-refuse:hover{border-color:rgba(255,255,255,.8);color:white}
+@media(max-width:600px){.cookie-banner{padding:16px 20px;flex-direction:column}.cookie-btns{width:100%}.cookie-accept,.cookie-refuse{flex:1;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- BANDEAU RGPD -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>🍪 Ce site utilise Google Analytics pour mesurer l'audience et améliorer votre expérience. Aucune donnée personnelle n'est revendue. En cliquant sur "Accepter", vous consentez à l'utilisation de cookies analytiques conformément au <a href="#" onclick="return false">RGPD</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-refuse" onclick="refuserCookies()">Refuser</button>
+    <button class="cookie-accept" onclick="accepterCookies()">Accepter</button>
+  </div>
+</div>
+
+<!-- RAPPEL FLOTTANT -->
+<div class="rappel-bubble" id="rappel-bubble">
+  <button class="rappel-close" onclick="document.getElementById('rappel-bubble').style.display='none'">✕</button>
+  <p class="rt">📞 Urgence Plomberie</p>
+  <p class="rs">Laissez votre numéro, Christian Garcia vous rappelle immédiatement (24/24).</p>
+  <input type="text" id="rappel-nom" placeholder="Votre prénom">
+  <input type="tel" id="rappel-tel" placeholder="06 XX XX XX XX">
+  <button class="send" onclick="envoyerRappel()">Me rappeler →</button>
+  <p id="rappel-status"></p>
+</div>
+<button class="rappel-toggle" onclick="toggleRappel()" title="Être rappelé">
+  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg>
+</button>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Garcia <span>Christian</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">L'artisan</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#zone">Zone</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:0667352159" class="nav-phone">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L7.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg>
+    06 67 35 21 59
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- PHOTO ALK PLOMBERIE OBLIGATOIRE -->
+  <div class="hero-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-sub">Chamalières Plomberie · Dépannage 24h/24</div>
+      <h1>Garcia<br><em>Christian</em></h1>
+      <p class="hero-desc">Artisan plombier chauffagiste de confiance basé à <strong style="color:white">Chamalières (63400)</strong>. Ouvert 24h/24 et 7j/7 pour vos urgences : fuites, débouchage, chauffe-eau et sanitaires. Interventions ultra-rapides (dans les 2h).</p>
+      <div class="hero-ctas">
+        <a href="tel:0667352159" class="btn-gold">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L7.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg>
+          Urgence 24h/24 : Appeler
+        </a>
+        <a href="#contact" class="btn-outline">Prendre Rendez-vous</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="stars">★★★★★</div>
+      <h3>Note Google 5/5</h3>
+      <p>"Sérieux et doté d'un très bon sens du service"</p>
+      <div class="card-info">
+        <div class="card-info-row">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+          <div><strong>Adresse</strong>54 Av. Joseph Claussat, 63400 Chamalières</div>
+        </div>
+        <div class="card-info-row">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L7.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg>
+          <div><strong>Téléphone</strong>06 67 35 21 59</div>
+        </div>
+        <div class="card-info-row">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
+          <div><strong>Ouvert 24h/24 et 7j/7</strong>Intervention express jour et nuit, week-end inclus</div>
+        </div>
+        <div class="card-info-row">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          <div><strong>Secteur</strong>Chamalières &amp; Agglomération clermontoise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Une fuite importante ou des toilettes bouchées ?</h2>
+  <p>Ne paniquez pas. Christian Garcia intervient très rapidement, même le samedi après-midi.</p>
+  <div class="cta-band-btns">
+    <a href="tel:0667352159" class="primary">
+      <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L7.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg>
+      06 67 35 21 59
+    </a>
+    <a href="#contact" class="secondary">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      Me faire rappeler
+    </a>
+  </div>
+</div>
+
+<!-- PHOTOS OBLIGATOIRES (ALK PLOMBERIE SET) -->
+<div class="photos-band">
+  <figure>
+    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Dépannage canalisation et fuite" loading="lazy">
+    <figcaption>Dépannage Urgence</figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Chaudière et tuyaux" loading="lazy">
+    <figcaption>Tuyauterie</figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Pose robinetterie" loading="lazy">
+    <figcaption>Sanitaires</figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Caisse à outils de plomberie" loading="lazy">
+    <figcaption>Travail Soigné</figcaption>
+  </figure>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Nos prestations</div>
+      <h2 class="section-title">Dépannage &amp; <span>Sanitaires</span></h2>
+      <p class="section-text">Chamalières Plomberie gère toutes les urgences et travaux d'installation sanitaire avec une efficacité redoutable reconnue par ses clients.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal d1">
+        <div class="icon">🚨</div>
+        <h4>Dépannage Urgence 24/7</h4>
+        <p>Intervention très rapide de jour comme de nuit, le dimanche ou les jours fériés. Mise en sécurité immédiate de votre logement.</p>
+      </div>
+      <div class="service-card reveal d2">
+        <div class="icon">💧</div>
+        <h4>Réparation de Fuites</h4>
+        <p>Recherche de fuite et réparation de canalisations d'eau ou de tuyaux de plomberie percés. Soudures et remplacements de raccords.</p>
+      </div>
+      <div class="service-card reveal d3">
+        <div class="icon">🌊</div>
+        <h4>Nettoyage de Canalisations</h4>
+        <p>Débouchage express de lavabos, éviers, douches et canalisations bouchées. Nous vous redonnons un écoulement parfait rapidement.</p>
+      </div>
+      <div class="service-card reveal d1">
+        <div class="icon">🚽</div>
+        <h4>Installation & Réparation Toilettes</h4>
+        <p>Mécanisme de chasse d'eau cassé ? Eau qui coule en continu ? Nous réparons ou installons vos nouveaux WC de manière professionnelle.</p>
+      </div>
+      <div class="service-card reveal d2">
+        <div class="icon">♨️</div>
+        <h4>Pose & Réparation Chauffe-Eau</h4>
+        <p>Diagnostic et réparation de votre production d'eau chaude, ou pose d'un nouveau ballon d'eau chaude (cumulus) si nécessaire.</p>
+      </div>
+      <div class="service-card reveal d3">
+        <div class="icon">🔧</div>
+        <h4>Pose & Réparation Robinetterie</h4>
+        <p>Remplacement de mitigeurs, mélangeurs et robinets thermostatiques qui fuient ou sont entartrés. Matériel de qualité fourni ou posé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-bg" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <!-- PHOTO ALK PLOMBERIE OBLIGATOIRE -->
+        <div class="about-photo">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80" alt="Christian Garcia plombier en intervention">
+          <div class="about-photo-badge">⭐ 5,0 / 5 · Google</div>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><div class="stat-num" data-target="24">0</div><div class="stat-label">Ouvert 24h/24</div></div>
+          <div class="stat"><div class="stat-num" data-target="7">0</div><div class="stat-label">Jours sur 7</div></div>
+          <div class="stat"><div class="stat-num" data-target="5.0">0</div><div class="stat-label">⭐ Note Google</div></div>
+          <div class="stat"><div class="stat-num" data-target="26">0</div><div class="stat-label">Avis de clients locaux</div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-label" style="color:#dc2626">L'artisan</div>
+        <h2 class="section-title" style="color:white">Un professionnel <br><span>réactif (dans les 2h)</span></h2>
+        <p class="section-text" style="color:rgba(255,255,255,.65);margin-bottom:28px">Connu historiquement sous le nom "Chamalières Plomberie", Christian Garcia met un point d'honneur à offrir un vrai sens du service à ses clients. L'atout n°1 de l'entreprise est son extrême réactivité : une urgence le week-end, une fuite un samedi après-midi... il répond présent avec courtoisie et efficacité.</p>
+        <div class="about-right">
+          <h3>Les points forts de Christian Garcia</h3>
+          <ul class="about-list">
+            <li><strong>Disponibilité 24/7 :</strong> De jour comme de nuit, sans interruption.</li>
+            <li><strong>Intervention "Dans les 2h" :</strong> Une réactivité précieuse selon les avis clients.</li>
+            <li><strong>Sens du service :</strong> "Courtois, souriant", un artisan à l'écoute.</li>
+            <li><strong>Débouchage & Tuyauterie :</strong> Un travail parfaitement réalisé.</li>
+            <li><strong>Intervention le week-end :</strong> N'attendez pas le lundi pour une grosse panne.</li>
+            <li><strong>Excellence confirmée :</strong> Une note de 5/5 sur 26 avis vérifiés.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-bg" id="avis">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Témoignages</div>
+      <h2 class="section-title">Avis <span>Clients Google</span></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal d1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">« Appel pour une réparation de fuite sur une canalisation d'eau. Professionnel très réactif (s'est déplacé en 48h), sérieux et doté d'un très bon sens du service... »</p>
+        <div class="reviewer"><div class="reviewer-avatar">VP</div><div><div class="reviewer-name">Virginie Paul</div><div class="reviewer-date">Visité en mai</div></div></div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">« Merci beaucoup pour votre rapide intervention un samedi après-midi. C'est super. Très professionnel. »</p>
+        <div class="reviewer"><div class="reviewer-avatar">DR</div><div><div class="reviewer-name">David Richard</div><div class="reviewer-date">Visité en novembre</div></div></div>
+      </div>
+      <div class="review-card reveal d3">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">« Courtois, souriant, très réactif (dans les deux heures) et surtout un travail parfaitement réalisé (débouchage de lavabo et réparation de tuyauterie)... »</p>
+        <div class="reviewer"><div class="reviewer-avatar">N</div><div><div class="reviewer-name">Nanasse 687</div><div class="reviewer-date">Visité en février</div></div></div>
+      </div>
+    </div>
+    <div class="reviews-score-wrap reveal">
+      <div class="reviews-score">5,0<sup>/5</sup></div>
+      <div class="reviews-meta">
+        <div class="stars-big">★★★★★</div>
+        <span>26 avis Google — Note Parfaite (100% de satisfaction)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-bg" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Questions fréquentes</div>
+      <h2 class="section-title">FAQ <span>Dépannage & Plomberie</span></h2>
+      <p class="section-text">Les réponses aux questions concernant nos interventions à Chamalières et sur la métropole clermontoise.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal d1">
+        <div class="faq-q" onclick="toggleFaq(this)">Êtes-vous vraiment ouvert 24h/24 ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Absolument. Garcia Christian / Chamalières Plomberie gère une permanence téléphonique continue pour traiter les urgences (fuites graves, toilettes bouchées) 24h/24 et 7 jours sur 7.</p></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <div class="faq-q" onclick="toggleFaq(this)">Intervenez-vous le week-end (samedi et dimanche) ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Oui, nous intervenons le samedi et le dimanche. Comme le soulignent nos clients, nous sommes disponibles même pour des interventions rapides le samedi après-midi.</p></div>
+      </div>
+      <div class="faq-item reveal d1">
+        <div class="faq-q" onclick="toggleFaq(this)">Quel est votre délai d'intervention ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Pour les urgences absolues (ex: lavabo bouché avec débordement, rupture de tuyau), nous pouvons intervenir "dans les deux heures". Pour les réparations classiques, nous nous déplaçons généralement sous 48h.</p></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <div class="faq-q" onclick="toggleFaq(this)">Que couvre le nettoyage de canalisations ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Il s'agit du débouchage en profondeur de vos éviers, lavabos, douches, baignoires et WC. Nous retirons les bouchons et nettoyons la tuyauterie pour un écoulement fluide et durable.</p></div>
+      </div>
+      <div class="faq-item reveal d1">
+        <div class="faq-q" onclick="toggleFaq(this)">Réparez-vous les chauffe-eau en panne ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Oui. Plus d'eau chaude ? Nous diagnostiquons la panne (thermostat, résistance, entartrage) et procédons à la réparation ou, si nécessaire, à la pose d'un nouveau cumulus.</p></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <div class="faq-q" onclick="toggleFaq(this)">Où êtes-vous basé exactement ?<span class="faq-arrow">▾</span></div>
+        <div class="faq-a"><p>Nous sommes situés au 54 Avenue Joseph Claussat à Chamalières (63400). Cette position centrale nous permet d'être très rapides sur Chamalières, Royat et Clermont-Ferrand.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE -->
+<section class="zone-bg" id="zone">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label" style="color:#dc2626">Zone d'intervention</div>
+      <h2 class="section-title" style="color:white">Chamalières <span>&amp; Agglomération</span></h2>
+      <p class="section-text" style="color:rgba(255,255,255,.6)">Implanté Avenue Joseph Claussat (63400), nous desservons très rapidement Chamalières et les communes alentour.</p>
+    </div>
+    <div class="zone-grid">
+      <div class="reveal-left">
+        <div class="zone-tags">
+          <span class="tag">Chamalières (63400)</span>
+          <span class="tag">Royat</span>
+          <span class="tag">Clermont-Ferrand</span>
+          <span class="tag">Durtol</span>
+          <span class="tag">Orcines</span>
+          <span class="tag">Beaumont</span>
+          <span class="tag">Ceyrat</span>
+          <span class="tag">Aubière</span>
+          <span class="tag">Puy-de-Dôme (63)</span>
+        </div>
+      </div>
+      <div class="zone-map reveal-right">
+        <!-- Carte centrée sur l'adresse : 54 Av. Joseph Claussat, 63400 Chamalières -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.933221234567!2d3.062211315455823!3d45.77650097910609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71b2d3b2b2b2b%3A0x8e8e8e8e8e8e8e8e!2s54%20Avenue%20Joseph%20Claussat%2C%2063400%20Chamali%C3%A8res!5e0!3m2!1sfr!2sfr!4v1710000000008!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Garcia Christian Plomberie — Chamalières (63)"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-bg" id="contact">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:48px">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Contactez-<span>nous</span></h2>
+      <p class="section-text">Une urgence ? Appelez directement le 06 67 35 21 59 (24h/24). Pour toute autre demande de réparation ou pose, remplissez ce formulaire.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-items">
+          <a href="tel:0667352159" class="contact-item">
+            <div class="contact-icon"><svg width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L7.8 10.8a11.04 11.04 0 005.4 5.4l1.413-1.424a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V20a2 2 0 01-2 2C9.163 22 2 14.837 2 6V5z"/></svg></div>
+            <div class="contact-item-text"><strong>06 67 35 21 59</strong><span>Appel direct — Dépannage 24/24</span></div>
+          </a>
+          <div class="contact-item" style="cursor:default">
+            <div class="contact-icon"><svg width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg></div>
+            <div class="contact-item-text"><strong>54 Av. Joseph Claussat</strong><span>63400 Chamalières</span></div>
+          </div>
+          <div class="contact-item" style="cursor:default">
+            <div class="contact-icon"><svg width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg></div>
+            <div class="contact-item-text"><strong>Ouvert 24h/24 et 7j/7</strong><span>Week-ends et jours fériés inclus</span></div>
+          </div>
+          <div class="contact-item" style="cursor:default">
+            <div class="contact-icon"><svg width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div>
+            <div class="contact-item-text"><strong>Sérieux &amp; Qualité</strong><span>Interventions garanties et soignées</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right">
+        <h3>Prendre Rendez-vous</h3>
+        <p>Remplissez le formulaire ci-dessous. Pour les urgences majeures, veuillez téléphoner.</p>
+        <div class="form-group"><label>Nom complet *</label><input type="text" id="f-nom" placeholder="Jean Dupont" autocomplete="name"></div>
+        <div class="form-group"><label>Téléphone *</label><input type="tel" id="f-tel" placeholder="06 XX XX XX XX" autocomplete="tel"></div>
+        <div class="form-group"><label>Type d'intervention</label>
+          <select id="f-type">
+            <option value="">-- Sélectionner --</option>
+            <option>Dépannage Urgence / Fuite</option>
+            <option>Débouchage de canalisation</option>
+            <option>Panne ou pose Chauffe-eau</option>
+            <option>Réparation de WC</option>
+            <option>Pose / Réparation Robinetterie</option>
+            <option>Autre prestation</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea id="f-msg" placeholder="Décrivez votre besoin…"></textarea></div>
+        <button class="form-submit" id="form-btn" onclick="envoyerDevis()">Envoyer la demande →</button>
+        <p id="form-status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo">Garcia <span>Christian</span></div>
+      <p>Artisan plombier basé à Chamalières (63). Ouvert 24h/24 et 7j/7 pour les urgences. Débouchage de canalisations, réparation de fuites d'eau, dépannage chauffe-eau et toilettes.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#services">Nos services</a>
+      <a href="#about">L'artisan</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📞 <a href="tel:0667352159">06 67 35 21 59</a></p>
+      <p>📍 54 Av. Joseph Claussat<br>63400 Chamalières</p>
+      <p style="margin-top:8px">Ouvert 24h/24, 7 jours/7</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Garcia Christian (Chamalières Plomberie) — Chamalières (63) · Tous droits réservés
+    <span style="display:block;margin-top:6px;font-size:.68rem;opacity:.5">
+      Responsable de publication : Christian Garcia · 54 Av. Joseph Claussat, 63400 Chamalières ·
+      Hébergement : Netlify, Inc. — 44 Montgomery Street, San Francisco, CA 94104, USA ·
+      Conception : Alinead
+    </span>
+  </div>
+</footer>
+
+<script>
+// RGPD
+function initCookieBanner(){
+  var c=localStorage.getItem('garcia_cookie');
+  if(!c) document.getElementById('cookie-banner').style.display='flex';
+  else if(c==='accepted') activerAnalytics();
+}
+function accepterCookies(){
+  localStorage.setItem('garcia_cookie','accepted');
+  document.getElementById('cookie-banner').style.display='none';
+  activerAnalytics();
+}
+function refuserCookies(){
+  localStorage.setItem('garcia_cookie','refused');
+  document.getElementById('cookie-banner').style.display='none';
+}
+function activerAnalytics(){
+  if(typeof gtag!=='undefined') gtag('consent','update',{analytics_storage:'granted'});
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click',function(){ if(typeof gtag!=='undefined') gtag('event','click_telephone',{event_category:'Contact',event_label:'Appel direct'}); });
+  });
+}
+initCookieBanner();
+
+// SCROLL REVEAL
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(function(el){ obs.observe(el); });
+
+// COMPTEURS
+var countersStarted=false;
+var statsObs=new IntersectionObserver(function(entries){
+  if(entries[0].isIntersecting&&!countersStarted){
+    countersStarted=true;
+    document.querySelectorAll('.stat-num[data-target]').forEach(function(el){
+      var target=parseFloat(el.getAttribute('data-target'));
+      var isFloat=target%1!==0;
+      var duration=1200,start=null;
+      function step(ts){
+        if(!start) start=ts;
+        var p=Math.min((ts-start)/duration,1),val=p*target;
+        el.textContent=isFloat?val.toFixed(1):Math.floor(val)+'+';
+        if(p<1) requestAnimationFrame(step);
+        else el.textContent=isFloat?target.toFixed(1):target+'+';
+      }
+      requestAnimationFrame(step);
+    });
+  }
+},{threshold:0.3});
+var ss=document.querySelector('.about-stats');
+if(ss) statsObs.observe(ss);
+
+// FAQ
+function toggleFaq(el){
+  var item=el.parentElement,isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+  if(!isOpen) item.classList.add('open');
+}
+
+// RAPPEL FLOTTANT
+function toggleRappel(){
+  var b=document.getElementById('rappel-bubble');
+  b.style.display=b.style.display==='block'?'none':'block';
+  if(b.style.display==='block') document.getElementById('rappel-tel').focus();
+}
+async function envoyerRappel(){
+  var tel=document.getElementById('rappel-tel').value.trim();
+  var nom=document.getElementById('rappel-nom').value.trim();
+  var st=document.getElementById('rappel-status');
+  var btn=document.querySelector('.rappel-bubble .send');
+  if(!tel){ st.style.display='block'; st.style.color='#dc2626'; st.textContent='⚠️ Entrez votre numéro.'; return; }
+  btn.textContent='Envoi…'; btn.disabled=true;
+  try {
+    var res=await fetch('https://formspree.io/f/XXXXXXXX',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Rappel 24/24 Garcia Christian',prenom:nom||'Non renseigné',telephone:tel})});
+    st.style.display='block';
+    if(res.ok){ st.style.color='#2563eb'; st.textContent='✅ Reçu ! Nous vous rappelons vite.'; btn.style.display='none'; }
+    else { st.style.color='#dc2626'; st.textContent='❌ Erreur. Appelez le 06 67 35 21 59.'; btn.textContent='Réessayer'; btn.disabled=false; }
+  } catch(e){ st.style.display='block'; st.style.color='#dc2626'; st.textContent='❌ Connexion impossible.'; btn.textContent='Réessayer'; btn.disabled=false; }
+}
+
+// FORMULAIRE
+async function envoyerDevis(){
+  var nom=document.getElementById('f-nom').value.trim();
+  var tel=document.getElementById('f-tel').value.trim();
+  var type=document.getElementById('f-type').value;
+  var msg=document.getElementById('f-msg').value.trim();
+  var status=document.getElementById('form-status');
+  var btn=document.getElementById('form-btn');
+  if(!nom||!tel){ status.style.display='block'; status.style.color='#dc2626'; status.style.background='rgba(220,38,38,.1)'; status.textContent='⚠️ Merci de renseigner votre nom et téléphone.'; return; }
+  btn.textContent='Envoi en cours…'; btn.disabled=true;
+  try {
+    var res=await fetch('https://formspree.io/f/XXXXXXXX',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({nom:nom,telephone:tel,intervention:type||'Non précisé',message:msg||'—',_subject:'Demande Garcia Christian'})});
+    var data=await res.json();
+    status.style.display='block';
+    if(res.ok){
+      status.style.color='#2563eb'; status.style.background='rgba(37,99,235,.1)';
+      status.textContent='✅ Demande envoyée ! Nous vous recontactons vite.';
+      btn.style.display='none';
+      if(typeof gtag!=='undefined') gtag('event','envoi_devis',{event_category:'Contact',event_label:'Formulaire devis'});
+      ['f-nom','f-tel','f-msg'].forEach(function(id){ document.getElementById(id).value=''; });
+      document.getElementById('f-type').value='';
+    } else {
+      var err=(data&&data.errors)?data.errors.map(function(e){return e.message;}).join(', '):'Erreur inconnue';
+      status.style.color='#dc2626'; status.style.background='rgba(220,38,38,.1)';
+      status.textContent='❌ '+err+' — Appelez le 06 67 35 21 59'; btn.textContent='Réessayer →'; btn.disabled=false;
+    }
+  } catch(e){
+    status.style.display='block'; status.style.color='#dc2626'; status.style.background='rgba(220,38,38,.1)';
+    status.textContent='❌ Connexion impossible. Appelez le 06 67 35 21 59.';
+    btn.textContent='Réessayer →'; btn.disabled=false;
+  }
+}
+</script>
+</body>
+</html>
